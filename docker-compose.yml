@@ -1,0 +1,15 @@
+version: "1.1"
+services:
+  worker:
+    build: .
+    environment:
+      REDIS_URI: $REDIS_URI
+      REDIS_PASSWORD: $REDIS_PASSWORD
+      STRING_SESSION: $STRING_SESSION
+      API_ID: $API_ID  # defaults to None
+      API_HASH: $API_HASH  # defaults to None
+      MONGO_URI: $MONGO_URI  # defaults to None
+      DATABASE_URL: $DATABASE_URL  # 
+      BOTLOG_CHATID: $BOTLOG_CHATID
+      BOT_TOKEN: $BOT_TOKEN
+      BOT_USERNAME: $BOT_USERNAME
